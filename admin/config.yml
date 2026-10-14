@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: agiosnektariosmegas/agiosnektariosmegas-site
+  branch: main
+
+media_folder: "images"
+public_folder: "/images"
+
+collections:
+  - name: "keimena"
+    label: "Πνευματικά κείμενα"
+    folder: "_keimena"
+    create: true
+    fields:
+      - { label: "Τίτλος", name: "title", widget: "string" }
+      - { label: "Κείμενο", name: "body", widget: "markdown" }
